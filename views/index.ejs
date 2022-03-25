@@ -1,0 +1,14 @@
+<h1>Loading file with MULTER</h1>
+<h3>Form Uploads</h3>
+
+<form method="post" enctype="multipart/form-data" action="/upload">
+    <input type="file" name="file">
+    <input type="submit" value="upload">
+</form>
+
+<p>Managing user inputs in forms
+    Web applications receive all different types of input from users, including text, graphical controls like checkboxes or radio buttons, and files, like images, videos, and other media.
+    
+    In forms, each of these inputs are submitted to a server that processes the inputs, uses them in some way, perhaps saving them somewhere else, then gives the frontend a success or failed response.
+    
+    When submitting forms that contain text inputs, the server, Node.js in our case, has less work to do. Using Express, you can easily grab all the inputs entered in the req.body object. However, submitting forms with files is a bit more complex because they require more processing, which is where Multer comes in.</p>
